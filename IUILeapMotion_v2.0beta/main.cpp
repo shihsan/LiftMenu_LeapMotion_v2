@@ -317,13 +317,13 @@ void SampleListener::onFrame(const Controller& controller) {
         }
         
         /* Painter Demo ------ status */
-        if(fingers[1].tipPosition().y < 50)
+        if(fingers[1].tipPosition().y < 80)
             buf_out << "0, ";
-        else if(fingers[1].tipPosition().y > 50 && fingers[1].tipPosition().y <100)
+        else if(fingers[1].tipPosition().y > 80 && fingers[1].tipPosition().y <160)
             buf_out << "1, ";
-        else if(fingers[1].tipPosition().y > 100 && fingers[1].tipPosition().y <150)
+        else if(fingers[1].tipPosition().y > 160 && fingers[1].tipPosition().y <240)
             buf_out << "2, ";
-        else if(fingers[1].tipPosition().y > 150)
+        else if(fingers[1].tipPosition().y > 240)
             buf_out << "3, ";
        
          //buf_out << "z: " << fingers[1].tipPosition().y << " END ";
